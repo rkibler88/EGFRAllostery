@@ -1,0 +1,22 @@
+Quantity,Manuscript,Verified,Source of truth,Verdict
+Raw family alignment size,"1,051,876 sequences","400,321 sequences",PF07714.alignment.full (Stockholm record count),WRONG
+Alignment width,"3,667 columns","3,839 columns",egfr_reference_aligned.fasta; plmc log 'sites out of 3839',WRONG
+Redundancy reduction,CD-HIT 80% then 62%,"single CD-HIT pass, -c 0.62 -n 4","run_cdhit.sh; cdhit_26371612.out (input 400,321 -> 32,911 clusters)",WRONG
+Final alignment depth,"93,773 sequences","32,912 sequences",kinase_final_aligned.fasta = plmc input per run_plmc.sh,WRONG
+"  (origin of 93,773)",-,"93,773 = kinase_60_winners.fasta","abandoned 80%->60% branch, never aligned, never used",PROVENANCE
+Valid sequences used by plmc,not reported,"32,672 of 32,912",plmc_26375071.err line 3,MISSING
+Effective sequences (Neff),not reported,"27,612.8",plmc_26375071.err line 5,MISSING
+Neff / L,N/L = 370 (raw N),Neff/L = 109.1  (N/L = 130.1),derived from plmc log,WRONG
+80% phylogenetic downweighting,'proportionally downweighted',no-op: 80% neighbourhood = 1.000 samples,plmc_26375071.err line 5,OVERSTATED
+EGFR focus residues,257 focus columns,257 residues; 253 match-state scored,"257 alpha chars; 253 uppercase (match), 4 lowercase (insert)",INCOMPLETE
+Residues dropped (257->253),unexplained,"[712, 713, 967, 968] (insert-state columns)",lowercase columns in egfr_reference_aligned.fasta,MISSING
+Scored residue pairs,"31,878","31,878 = C(253,2)=31,878",egfr_couplings.txt / _translated.csv,OK
+Analyzable residues,253 (unexplained),253,community + coupling files agree,OK
+Network nodes at 1.80L,253,253,egfr_communities_PRODUCTION_1.8L.csv,OK
+L used in code,L = 257 (implied),L = 257 hard-coded; true node count 253,"1_8_egfrcommunity.py, Qtitration.py, optimize_q.py",INCONSISTENT
+Edges at 1.80L,462,int(257*1.80)=462; int(253*1.80)=455,L=257 used to set edge count,INCONSISTENT
+Communities detected,15,15,community file,OK
+Community sizes,"C3=32, C11=7","{0: 21, 1: 14, 2: 17, 3: 32, 4: 9, 5: 14, 6: 21, 7: 18, 8: 18, 9: 11, 10: 22, 11: 7, 12: 9, 13: 15, 14: 25}",community file,OK
+MD construct,residues 712-970,"259 Ca atoms, residues 712-970",covar.log 'C-alpha (259 atoms)',OK
+MD length,100 ns,"50,001 frames, 0-100,000 ps",covar.log,OK
+MD replicates,single trajectory,n = 1,covar.log / md.mdp,OK (acknowledged)

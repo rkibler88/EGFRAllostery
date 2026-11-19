@@ -1,0 +1,28 @@
+; Per-seed re-equilibration, 1 ns -- generates INDEPENDENT velocities.
+; This stage is the only thing that differs between replicates.
+integrator              = md
+nsteps                  = 500000    ; 2 fs * 500,000 = 1 ns
+dt                      = 0.002
+nstxout-compressed      = 50000
+nstlist                 = 20
+cutoff-scheme           = Verlet
+coulombtype             = PME
+rcoulomb                = 1.0
+rvdw                    = 1.0
+tcoupl                  = V-rescale
+tc-grps                 = Protein Non-Protein
+tau_t                   = 0.1     0.1
+ref_t                   = 310     310
+; C-rescale, not Parrinello-Rahman: PR is not robust immediately after
+; velocity generation. Production below restores PR.
+pcoupl                  = C-rescale
+pcoupltype              = isotropic
+tau_p                   = 2.0
+ref_p                   = 1.0
+compressibility         = 4.5e-5
+gen_vel                 = yes
+gen_temp                = 310
+gen_seed                = __SEED__
+ld-seed                 = __SEED__
+constraints             = h-bonds
+continuation            = no

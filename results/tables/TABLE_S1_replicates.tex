@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\caption{Replicate molecular dynamics: provenance and per-replicate statistics. Five independent 100~ns trajectories of the monomeric EGFR kinase domain (500~ns aggregate). Replicate 1 is the published run; replicates 2--5 were initialised with independent velocities from the same NPT configuration (identical \texttt{npt.gro}, \texttt{npt.cpt} and \texttt{topol.top} SHA256) via a 1~ns re-equilibration at 310~K. Enrichment is the ratio of mean absolute dynamic correlation in the 500 most strongly co-evolving distal pairs to the matched null, with bootstrap 95\% confidence intervals over 2{,}000 replicates. Throughput is the GROMACS \texttt{Performance} value from each production log.}
+\label{tab:replicates}
+\begin{tabular}{lllllll}
+\hline
+Replicate & Seed & GROMACS build & ns/day & $r$ vs rep 1 & \multicolumn{2}{c}{Enrichment [95\% CI]} \\
+ & & & & & sequence null & distance-matched \\
+\hline
+  1 & n/a (published run) & 2025.2 site module & 418 & -- & 1.83 [1.66, 2.00] & 1.02 [0.94, 1.12] \\
+  2 & 20250002 & 2025.2 conda-forge (AVX2\_256) & 411 & 0.888 & 1.88 [1.70, 2.07] & 0.98 [0.89, 1.07] \\
+  3 & 20250003 & 2025.2 conda-forge (AVX2\_256) & 400 & 0.830 & 1.71 [1.56, 1.86] & 0.97 [0.89, 1.06] \\
+  4 & 20250004 & 2025.2 conda-forge (AVX2\_256) & 411 & 0.849 & 1.52 [1.40, 1.65] & 0.96 [0.89, 1.04] \\
+  5 & 20250005 & 2025.2 conda-forge (AVX2\_256) & 418 & 0.798 & 1.45 [1.35, 1.57] & 0.95 [0.88, 1.02] \\
+\hline
+\end{tabular}
+\end{table}

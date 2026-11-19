@@ -1,0 +1,6 @@
+Replicate,gen_seed,GROMACS build,ns/day,r vs rep 1,"Enrichment, sequence null","Enrichment, distance-matched null"
+1,n/a (published run),2025.2 site module,418,--,"1.83 [1.66, 2.00]","1.02 [0.94, 1.12]"
+2,20250002,2025.2 conda-forge (AVX2_256),411,0.888,"1.88 [1.70, 2.07]","0.98 [0.89, 1.07]"
+3,20250003,2025.2 conda-forge (AVX2_256),400,0.830,"1.71 [1.56, 1.86]","0.97 [0.89, 1.06]"
+4,20250004,2025.2 conda-forge (AVX2_256),411,0.849,"1.52 [1.40, 1.65]","0.96 [0.89, 1.04]"
+5,20250005,2025.2 conda-forge (AVX2_256),418,0.798,"1.45 [1.35, 1.57]","0.95 [0.88, 1.02]"

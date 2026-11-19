@@ -1,0 +1,12 @@
+; Energy Minimization Parameters
+integrator  = steep     ; Algorithm (Steepest Descent)
+emtol       = 1000.0    ; Stop when max force < 1000.0 kJ/mol/nm
+emstep      = 0.01      ; Minimization step size
+nsteps      = 50000     ; Maximum number of steps
+nstlist     = 1         ; Frequency to update neighbor list
+cutoff-scheme = Verlet  ; Standard for GPUs
+ns_type     = grid
+pbc         = xyz
+coulombtype = PME       ; Long-range electrostatics
+rcoulomb    = 1.0
+rvdw        = 1.0

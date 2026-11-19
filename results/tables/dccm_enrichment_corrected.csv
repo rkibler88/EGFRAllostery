@@ -1,0 +1,3 @@
+null_model,null_mean,test_mean,enrichment,ci_low,ci_high,p_value,note
+"Sequence separation only (|i-j|>5), as published",0.157,0.2868,1.83,1.66,2.0,2.7e-39,"reproduces the manuscript's 1.84x and 0.156 baseline; 200 replicate draws, bootstrap CI over pairs"
+CA-CA distance-matched (2 A bins) + |i-j|>5,0.2807,0.2868,1.02,0.94,1.12,0.5,no enrichment survives spatial matching; ratio stable across seeds and across five replicates (0.95-1.02); CI upper bound 1.1160 as printed by analysis/make_figure6.py

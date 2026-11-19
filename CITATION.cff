@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "Co-evolutionary community architecture of the EGFR kinase domain"
+message: "If you use this code or data, please cite the accompanying manuscript."
+authors:
+  - family-names: Kibler
+    given-names: Ryan
+    affiliation: "Department of Microbiology and Cell Science, University of Florida"
+  - family-names: Dias
+    given-names: Raquel
+    affiliation: "Department of Microbiology and Cell Science, University of Florida"
+license: MIT
+repository-code: "https://github.com/rkibler88/EGFRAllostery"

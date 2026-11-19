@@ -1,0 +1,6 @@
+replicate,beta3-alphaC (749-754) mean_nm,beta3-alphaC (749-754) best_rank,N-lobe beta-sheet (734-737) mean_nm,N-lobe beta-sheet (734-737) best_rank,activation loop (855-875) mean_nm,activation loop (855-875) best_rank,top10_in_two_flexible_regions,max_activation_loop_nm
+1,0.3762,1,0.3409,4,0.1126,21,9,0.1879
+2,0.2703,2,0.3065,1,0.1497,10,7,0.2766
+3,0.3373,1,0.3333,2,0.1397,16,7,0.2705
+4,0.3467,2,0.3713,1,0.2032,9,5,0.3391
+5,0.3549,3,0.3891,1,0.1543,20,8,0.2766

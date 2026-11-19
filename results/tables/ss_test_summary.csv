@@ -1,0 +1,14 @@
+test,metric,value
+"SS assignment (501 frames, DSSP)",residues beta / helix / loop,51 / 90 / 118
+Cross-strand beta registers,"both beta, backbone H-bond occupancy>=0.5, |i-j|>4",15 pairs
+1a Distance-adjusted |DCCM| by class,rank order (highest to lowest),beta-beta > beta-alpha > beta-loop > alpha-loop ~ alpha-alpha > loop-loop
+1a Distance-adjusted |DCCM| by class,beta-beta vs loop-loop delta,+0.026 vs -0.018
+1a Distance dependence,beta-beta advantage range,confined to <12 A; absent beyond
+1b Cross-strand vs distance-matched,mean |DCCM| 0.717 vs 0.360,"1.99x, MWU p=1.05e-07"
+1c Composition of top-|DCCM| pairs,beta-beta share of top 100 (background 3.8%),60.0% (15.8x)
+1c Composition of top-|DCCM| pairs,beta-beta share of top 50,74.0%
+1c Composition of top-|DCCM| pairs,alpha-alpha share of top 100 (background 11.8%),3.0% (depleted)
+2 DCA set pair-class composition,beta-beta share of top-500 couplings vs background,7.0% vs 3.8%
+2 Null: separation+distance,enrichment,"1.18x, residue-level CI [+0.014,+0.077]"
+2 Null: separation+distance+pairing class,enrichment,"1.11x, residue-level CI [+0.002,+0.056]"
+2 Null: ensemble-distal + pairing class,enrichment,"0.97x, residue-level CI [-0.022,+0.015] (includes zero)"

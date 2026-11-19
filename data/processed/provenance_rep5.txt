@@ -1,0 +1,25 @@
+replicate      5
+gen_seed       20250005
+slurm_job      50632117_5
+node           c0605a-s19.ufhpc
+date_utc       2026-11-10T15:04:52Z
+gmx_binary     /blue/raquel.dias/rkibler/.conda/envs/gmx2025/bin.AVX2_256/gmx
+conda_prefix   /blue/raquel.dias/rkibler/.conda/envs/gmx2025
+                   :-) GROMACS - gmx, 2025.2-conda_forge (-:
+
+Executable:   /blue/raquel.dias/rkibler/.conda/envs/gmx2025/bin.AVX2_256/gmx
+Data prefix:  /blue/raquel.dias/rkibler/.conda/envs/gmx2025
+Working dir:  /blue/raquel.dias/rkibler/EGFR/replicates/rep5
+Command line:
+  gmx --version
+
+GROMACS version:     2025.2-conda_forge
+Precision:           mixed
+Memory model:        64 bit
+MPI library:         thread_mpi
+--- input sha256 ---
+c7d15f952eb204b32bc5451e0570fca239ed05dcfceac79fc256936239894cbd  npt.gro
+d648ead6c1ef069db7e8da3747d50eea32c19f67c1605c9c2b06a8efa973c6c7  npt.cpt
+80a812083591cff9e56b1214a67fa8515c5773adfc89f48893b387599cb10002  topol.top
+852f486d63b8224c97f8e8bd31982047066ddebfc766b97bd86b40d61a4f10ca  eq_rep5.mdp
+fff2d8e41c4ce216ebb972422eeb7dc4d51300e003e51d40b58535727833a861  md_rep.mdp

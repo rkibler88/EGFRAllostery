@@ -1,0 +1,13 @@
+; Parameters for adding ions and initial energy minimization
+integrator  = steep     ; Algorithm: Steepest Descent (The Fix)
+emtol       = 1000.0    ; Stop when max force < 1000.0 kJ/mol/nm
+emstep      = 0.01      ; Optimization step size
+nsteps      = 50000     ; Maximum number of steps
+nstlist     = 1         ; Frequency to update neighbor list
+cutoff-scheme = Verlet  ; Standard for modern GPUs
+ns_type     = grid      ; Method to determine neighbor list
+pbc         = xyz       ; 3D Periodic Boundary Conditions
+coulombtype = PME       ; Fast Fourier Transform for electrostatics
+rcoulomb    = 1.0       ; Distance for Coulomb cutoff (1 nm)
+rvdw        = 1.0       ; Distance for Van der Waals cutoff (1 nm)
+constraints = none      ; Don't constrain bonds during minimization

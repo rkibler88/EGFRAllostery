@@ -1,0 +1,14 @@
+name: egfr-allostery
+channels: [conda-forge]
+dependencies:
+  - python=3.13
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - networkx
+  - biopython
+  - pip
+  - pip:
+      - python-louvain

@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+# large upstream inputs - see data/README.md for provenance and regeneration
+data/raw/
+*.xtc
+*.edr
+*.trr
+*.cpt
+*.plmc
+PF07714.alignment.full
+kinase_*.fasta
+kinase_*.clstr
+# LaTeX build products
+manuscript/*.aux
+manuscript/*.bbl
+manuscript/*.blg
+manuscript/*.log
+manuscript/*.out
+manuscript/*.fls
+manuscript/*.fdb_latexmk
+manuscript/frontiers.pdf

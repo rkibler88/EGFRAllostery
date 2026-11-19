@@ -1,0 +1,18 @@
+analysis,metric,value
+Published top-500 'long-range' set composition,frac. in contact (<=5 A) in >=1 of 328 EGFR structures,43.0%
+Published top-500 'long-range' set composition,median min heavy-atom distance across states,6.17 A
+Published top-500 'long-range' set composition,frac. truly distal (>12 A in all states),28.6%
+Census restated at CASP convention |i-j|>=24,frac. in contact (<=5 A),32.0%
+"Evolution-dynamics enrichment, published null",mean |DCCM| ratio,1.80x (p=1.7e-25)
+"Evolution-dynamics enrichment, matched null",mean |DCCM| ratio,"1.17-1.19x (residue-level 95% CI [+0.012,+0.076])"
+"Evolution-dynamics enrichment, distal pairs only",mean |DCCM| ratio,0.95x (residue-level 95% CI includes zero: no effect)
+Gap-state sensitivity of the coupling score,"Spearman(gap-incl, gap-excl APC)",0.986; 92% top-500 overlap
+SCA significant eigenmodes,kpos (vs randomised 2nd eigenvalue 5.32),6
+SCA sector membership vs conservation,"Spearman(Di, max |IC| loading)",0.832
+SCA sector 2 spatial compactness,mean CA-CA vs conservation-matched null,10.9 A vs 18.0 A (p<0.0005)
+"Site-anchored coupling, allosteric pocket -> ATP site",ratio vs distance-matched controls (DCA),1.05x (p=0.81)
+"Site-anchored coupling, allosteric pocket -> ATP site",ratio vs distance-matched controls (SCA),1.02x (p=0.88)
+Hopfield-Potts spectral decomposition,contact enrichment range across patterns,0.83-1.18 (uninformative)
+Hopfield-Potts spectral decomposition,participation ratio (of 253 positions),median 216; top modes 186-218
+SCA sector 2 spatial compactness,mean CA-CA vs run-length-matched null,10.9 A vs 20.4 A (p<0.0005)
+Residue-level cluster bootstrap,distinct residues behind the 500 distal pairs,203 of 253

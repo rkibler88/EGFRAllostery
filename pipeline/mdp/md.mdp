@@ -1,0 +1,29 @@
+; Production MD Parameters - 100 ns - High Resolution
+integrator              = md
+nsteps                  = 50000000  ; 2fs * 50,000,000 = 100 ns
+dt                      = 0.002
+; Output Control
+nstxout-compressed      = 1000      ; Save coordinates every 2 ps (High Res)
+; Neighbor Searching
+nstlist                 = 20
+cutoff-scheme           = Verlet
+; Electrostatics & VDW
+coulombtype             = PME
+rcoulomb                = 1.0
+rvdw                    = 1.0
+; Temperature Coupling
+tcoupl                  = V-rescale
+tc-grps                 = Protein Non-Protein
+tau_t                   = 0.1     0.1
+ref_t                   = 310     310
+; Pressure Coupling
+pcoupl                  = Parrinello-Rahman ; Ensemble-correct for production
+pcoupltype              = isotropic
+tau_p                   = 2.0
+ref_p                   = 1.0
+compressibility         = 4.5e-5
+; Velocity Generation
+gen_vel                 = no        ; Continue from NPT
+; Constraints
+constraints             = h-bonds   ; Fixes bonds to H-atoms
+continuation            = yes       ; Restarting from NPT

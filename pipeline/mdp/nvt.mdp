@@ -1,0 +1,18 @@
+define                  = -DPOSRES
+integrator              = md
+nsteps                  = 250000    ; 2 * 250,000 = 500 ps
+dt                      = 0.002
+nstlist                 = 20        ; Optimized for GPU
+cutoff-scheme           = Verlet
+ns_type                 = grid
+pbc                     = xyz
+coulombtype             = PME
+rcoulomb                = 1.0
+rvdw                    = 1.0
+tcoupl                  = V-rescale
+tc-grps                 = Protein Non-Protein
+tau_t                   = 0.1     0.1
+ref_t                   = 310     310    ; Human body temp
+pcoupl                  = no
+constraints             = h-bonds
+continuation            = no

@@ -1,0 +1,10 @@
+residue,aa,label,community,node_strength,strength_rank,betweenness,betweenness_rank
+745,K,K745 catalytic lysine,0,6.418,197.0/253,0.0002,203.0/253
+762,E,E762 alphaC glutamate,7,7.266,168.0/253,0.0596,46.0/253
+790,T,T790M gatekeeper,2,11.678,61.0/253,0.1166,20.0/253
+792,L,L792,0,14.735,26.0/253,0.3118,1.0/253
+793,M,M793,13,18.319,7.0/253,0.2651,3.0/253
+855,D,D855 (DFG),12,7.123,174.0/253,0.0542,52.0/253
+858,L,L858R activating,12,5.38,228.0/253,0.0314,86.0/253
+948,V,V948 dimer interface,3,6.882,182.0/253,0.0003,201.0/253
+965,I,'primary topological anchor',3,24.742,1.0/253,0.0473,60.0/253

@@ -1,0 +1,40 @@
+figure,quantity,drawn,recomputed,status
+Fig 1C,scored pairs,31878,31878,OK
+Fig 1C,match-state positions,253,253,OK
+Fig 1C,communities,15,15,OK
+Fig 1C,Q at 462 edges,0.8036,0.8036,OK
+Fig 1C,Neff/L,109,109,OK
+Fig 2,percolation edge count,458,458,OK
+Fig 2,Q max at 253 edges,0.8894,0.8894,OK
+Fig 3A,betweenness 792,0.3118,0.3118,OK
+Fig 3A,betweenness 793,0.2651,0.2651,OK
+Fig 3A,792 betweenness rank,1,1,OK
+Fig 3A,793 betweenness rank,3,3,OK
+Fig 3B,793 node-strength rank,7,7,OK
+Fig 3B,top-5 node strength,"[965, 717, 799, 851, 964]","[965, 717, 799, 851, 964]",OK
+Fig 3 box,top betweenness at 404 edges,849,849,OK
+Fig 3 box,top betweenness at 430 edges,849,849,OK
+Fig 3 box,top-5 strength identical 404-506,True,True,OK
+Fig 4C,C7/C3 ratio,3.9,3.92,OK
+Fig 4C,C7/C14 ratio,3.4,3.36,OK
+Fig 4C,most rigid community,3,3,OK
+Fig 5,inter-community edges,63,63,OK
+Fig 5,pairs with an edge,27,27,OK
+Fig 5,total pairs,105,105,OK
+Fig 5C,C3-C6 coupling,18.0,18.0,OK
+Fig 5C,C3-C6 edges,8,8,OK
+Fig 5C,C3-C14 coupling,12.95,12.95,OK
+Fig 5C,C3-C14 edges,7,7,OK
+Fig 5,strongest two pairs,"[(3, 6), (3, 14)]","[(3, 6), (3, 14)]",OK
+Fig 6D,sequence null mean,0.1567,0.1567,OK
+Fig 6D,distance-matched null mean,0.2813,0.2813,OK
+Fig 6D,co-evolving mean,0.2868,0.2868,OK
+Fig 6D,enrichment vs seq null,1.83,1.83,OK
+Fig 6D,enrichment vs distance null,1.02,1.02,OK
+Fig 1B/3A,residue 853,I,I,OK
+Fig 1B/3A,residue 855,D,D,OK
+Fig 1B/3A,residue 856,F,F,OK
+Fig 1B/3A,residue 857,G,G,OK
+Fig 1B/3A,residue 790,T,T,OK
+Fig 1B/3A,residue 858,L,L,OK
+compute_pathways,858 has only backbone edges,True,True,OK
